@@ -1,0 +1,65 @@
+.main{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.main .header1{
+    margin-top: 10px;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 56px;
+    padding: 10px 30px;
+    background-color: rgb(57, 144, 224);
+    margin-bottom: 20px;
+}
+.main .header2{
+    font-weight: bold;
+    color: #b9b9b9;
+    font-size: 32px;
+    text-align: center;
+}
+
+.main .section_info{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+
+    font-weight: 200;
+    font-size: 24px;
+    width: 70%;
+}
+
+.main .linkMoreInfo{
+    text-decoration: none;
+    color: #fff;
+
+    padding: 20px 30px;
+    background-color:cornflowerblue;
+    font-weight: bold;
+    font-size: 24px;
+    border: none;
+    border-radius: 10px;
+
+    margin-bottom: 30px;
+}
+
+.main .linkMoreInfo:hover{
+    background-color: #fff;
+    color: #000;
+    transition: 0.5s ease-in-out;
+}
+
+.main .picture{
+    background-image: url("src/assets/pictures/main_page_pic.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 70%;
+    height: 350px;
+}

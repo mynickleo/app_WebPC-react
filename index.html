@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel = "stylesheet" href = "src/index.css">
+    <title>Vite + React</title>
+  </head>
+  <body>
+    <header>
+      <div class = "header-container">
+        <p class = "main-header">Buy PC</p>
+        <div class = "catalog" id = "catalog">Каталог</div>
+        <input class = "main-input" type = "text" id = "search" placeholder = "Search..." />
+        <div class = "button">
+          <div class = "login" id = "buttonLogin">Войти</div>
+          <a class = "basket" href = "/basket">Корзина</a>
+        </div>
+      </div>
+    </header>
+    <div class = "line"></div>
+    <div class = "modal-catalog" id = "modal">
+        <a class = "product-category" href = "/cpu">
+          <p class = "header-info">Процессоры</p>
+          <p class = "small-info">Купить процессоры AMD и Intel</p>
+        </a>
+        <a class = "product-category" href = "/gpu">
+          <p class = "header-info">Видеокарты</p>
+          <p class = "small-info">Противостояние NVIDIA и AMD</p>
+        </a>
+        <a class = "product-category" href = "/ram">
+          <p class = "header-info">Оперативная память</p>
+          <p class = "small-info">Качество и производительность</p>
+        </a>
+        <a class = "product-category" href = "/todo">
+          <p class = "header-info">Наши дела</p>
+          <p class = "small-info">Что нам предстоит собрать и отправить</p>
+        </a>
+    </div>
+    <div id="root" class = "root"></div>
+    <footer></footer>
+    <div class="modal">
+      <div class="modal-box">
+        <div class="modal-body">
+          <h3>Авторизация</h3>
+          <form>
+            <div class="form-control">
+              <label for="phone">Логин</label>
+              <input 
+              type="login" 
+              id="login" 
+              required
+              />
+            </div>
+            <div class="form-control">
+              <label for="password">Пароль</label>
+              <input 
+              type="password" 
+              id="password" 
+              required />
+            </div>
+            <p><a href="#">Забыли свой пароль?</a></p>
+            <button class="btn_button_dark" id = "login_">Войти</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+        </div>
+        <img
+          class="close"
+          src="https://github.com/bradtraversy/hulu-webpage-clone/blob/main/img/close.svg?raw=true"
+          alt="close"
+        />
+      </div>
+    </div>
+    <script type="module" src="/src/main.jsx"></script>
+    <script src = "src/components/ui/animation.js"></script>
+  </body>
+</html>

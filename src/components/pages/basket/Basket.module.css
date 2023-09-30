@@ -1,0 +1,40 @@
+.body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.main .header_name{
+    margin-top: 150px;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.linkButton{
+    text-decoration: none;
+    color: #fff;
+
+    padding: 20px 30px;
+    background-color:cornflowerblue;
+    font-weight: bold;
+    font-size: 24px;
+    border: none;
+    border-radius: 10px;
+
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.linkButton:hover{
+    background-color: #fff;
+    color: #000;
+    transition: 0.5s ease-in-out;
+}

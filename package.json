@@ -1,17 +1,23 @@
 {
   "name": "app-webpc",
   "private": true,
+  "homepage": "https://mynickleo.github.io/app_WebPC-react/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist",
+    "predeploy": "yarn build"
   },
   "dependencies": {
     "@tanstack/react-query": "^4.35.3",
     "axios": "^1.5.1",
+    "build": "^0.1.4",
+    "gh-pages": "^6.0.0",
+    "pushstate-server": "^3.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.16.0"
